@@ -1,2 +1,3 @@
 InfoWro
 =======
+zmiana1
