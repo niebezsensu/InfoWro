@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="pl">
-<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Zarejestruj się</title>
 	</head>
 
 	<body>
-		<h1>Wypełnij formularz</h1>
+		<h1>Wrocław</h1>
+		<p><b><a href="main.html">Strona główna</a></b></p>
+		<h2>Wypełnij formularz</h2>
 
 		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
 			<fieldset>
-				<legend> Dane </legend>
+				<legend><b>Dane</b></legend>
 				<p>
-					Imię:
+					<b>Imię:</b>
 	  				<input type="text" name="name"><br>
-					Nazwisko:
-	  				<input type="text" name="name"><br>
-					E-mail:
-	  				<input type="text" name="name">
+					<b>Nazwisko:</b>
+	  				<input type="text" name="surname"><br>
+	  				<b>Nick:</b>
+	  				<input type="text" name="nickname"><br>
+					<b>E-mail:</b>
+	  				<input type="text" name="email"><br>
+	  				<b>Hasło:</b>
+	  				<input type="password" name="password">
 	  			</p>
 
 	  			<p>
@@ -27,7 +32,7 @@
 				</p>
 
 				<p>
-					Twoje ulubione miejsca we Wrocławiu:<br>
+					<b>Twoje ulubione miejsca we Wrocławiu:</b><br>
 					<input type="checkbox" name="place" value="ostrow">Ostrów Tumski<br>
 					<input type="checkbox" name="place" value="train-station">Dworzec Główny<br>
 					<input type="checkbox" name="place" value="park">Park Szczytnicki<br>
@@ -36,7 +41,7 @@
 				</p>
 
 				<p>
-					Skąd pochodzisz?<br>
+					<b>Skąd pochodzisz?</b><br>
 					<select name="home">
 					<option value="village">Wieś</option>
 					<option value="town">Miasto do 40 tys. mieszkańców</option>
@@ -46,7 +51,7 @@
 				</p>
 
 				<p>
-					Uwagi:<br>
+					<b>Uwagi:</b><br>
 					<textarea rows="4" cols="50" maxlength="200"> </textarea>
 				</p>
 
