@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Zarejestruj się</title>
+	</head>
+
+	<body>
+		<h1>Wypełnij formularz</h1>
+
+		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+			<fieldset>
+				<legend> Dane </legend>
+				<p>
+					Imię:
+	  				<input type="text" name="name"><br>
+					Nazwisko:
+	  				<input type="text" name="name"><br>
+					E-mail:
+	  				<input type="text" name="name">
+	  			</p>
+
+	  			<p>
+	  				<input type="radio" name="plec" value="female">Kobieta<br>
+					<input type="radio" name="plec" value="male">Mężczyzna
+				</p>
+
+				<p>
+					Twoje ulubione miejsca we Wrocławiu:<br>
+					<input type="checkbox" name="place" value="ostrow">Ostrów Tumski<br>
+					<input type="checkbox" name="place" value="train-station">Dworzec Główny<br>
+					<input type="checkbox" name="place" value="park">Park Szczytnicki<br>
+					<input type="checkbox" name="place" value="marketplace">Rynek<br>
+					<input type="checkbox" name="place" value="pergola">Pergola
+				</p>
+
+				<p>
+					Skąd pochodzisz?<br>
+					<select name="home">
+					<option value="village">Wieś</option>
+					<option value="town">Miasto do 40 tys. mieszkańców</option>
+					<option value="small-city">Miasto od 40 do 100 tys. mieszkańców</option>
+					<option value="big-city">Miasto powyżej 100 tys. mieszkańców</option>
+					</select>
+				</p>
+
+				<p>
+					Uwagi:<br>
+					<textarea rows="4" cols="50" maxlength="200"> </textarea>
+				</p>
+
+				<p>
+					<input type="submit" value="Wyślij">
+					<input type="reset" value="Wyczyść">
+				</p>
+			</fieldset>
+		</form>
+
+		<footer>
+			<p>&copy; 2014 Karolina i Asia. All rights reserved.</p>
+		</footer>
+	</body>
+
+</html>
