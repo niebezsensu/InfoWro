@@ -10,20 +10,38 @@
 		<p><strong><a href="main.html">Strona główna</a></strong></p>
 		<h2>Wypełnij formularz</h2>
 
-		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
 			<fieldset>
 				<legend><strong>Dane</strong></legend>
 				<p>
-					<strong>Imię:</strong>
-	  				<input type="text" name="name"><br>
-					<strong>Nazwisko:</strong>
-	  				<input type="text" name="surname"><br>
-	  				<strong>Nick:</strong>
-	  				<input type="text" name="nickname"><br>
-					<strong>E-mail:</strong>
-	  				<input type="text" name="email"><br>
-	  				<strong>Hasło:</strong>
-	  				<input type="password" name="password">
+					
+	  				<input type="text" name="name" autofocus><label>&Tab;Imię </label><br>
+					
+	  				<input type="text" name="surname" required><label>&Tab;Nazwisko</label><br>
+	  				
+	  				<input type="text" name="nickname"><label>&Tab;Nick</label><br>
+					
+	  				<input type="email" name="e-mail" required><label>&Tab;E-mail &lpar;<i>exam@ple.pl</i>&rpar;</label><br>
+	  				
+	  				<input type="tel" name="tele" pattern="[0-9]{9}"><label>&Tab;Telefon &lpar;<i>123456789</i>&rpar;</label><br>
+	  				
+	  				<input list="months">
+	  					<datalist id="months">
+						  <option value="Styczeń">
+						  <option value="Luty">
+						  <option value="Marzec">
+						  <option value="Kwiecień">
+						  <option value="Maj">
+						  <option value="Czerwiec">
+						  <option value="Lipiec">
+						  <option value="Sierpień">
+						  <option value="Wrzesień">
+						  <option value="Październik">
+						  <option value="Listopad">
+						  <option value="Grudzień">
+						</datalist><label>&Tab;Miesiąc urodzin &lpar;<i>wybierz</i>&rpar;</label><br>
+	  				
+	  				<input type="password" name="password"><label>&Tab;Hasło</label>
 	  			</p>
 
 	  			<p>
