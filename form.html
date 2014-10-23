@@ -3,6 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Zarejestruj się</title>
+		<style>
+			body{
+				background-image: url("images/krasnal.png");
+			}
+		</style>
 	</head>
 
 	<body>
@@ -10,7 +15,7 @@
 		<p><strong><a href="main.html">Strona główna</a></strong></p>
 		<h2>Wypełnij formularz</h2>
 
-		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
+		<form id="form1" action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
 			<fieldset>
 				<legend><strong>Dane</strong></legend>
 				<p>
@@ -74,8 +79,8 @@
 				</p>
 
 				<p>
-					<input type="submit" value="Wyślij">
-					<input type="reset" value="Wyczyść">
+					<input type="submit" formnovalidate value="Wyślij"/>
+					<input type="reset" value="Wyczyść"/>
 				</p>
 			</fieldset>
 		</form>
