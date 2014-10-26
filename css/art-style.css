@@ -1,0 +1,11 @@
+
+body{
+	background-image: url("../images/paint.png");
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+
+}
+
+h4:active{
+	color:red;
+}

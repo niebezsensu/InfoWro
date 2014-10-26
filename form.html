@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Zarejestruj się</title>
-		<style>
-			body{
-				background-image: url("images/krasnal.png");
-			}
-		</style>
+
+		<link rel="stylesheet" href="css/form-style.css" type="text/css"/>
+
 	</head>
 
 	<body>
 		<h1>Wrocław</h1>
 		<p><strong><a href="main.html">Strona główna</a></strong></p>
 		<h2>Wypełnij formularz</h2>
+
+		<p></p>
 
 		<form id="form1" action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
 			<fieldset>
@@ -24,7 +24,7 @@
 					
 	  				<input type="text" name="surname" required><label>&Tab;Nazwisko</label><br>
 	  				
-	  				<input type="text" name="nickname"><label>&Tab;Nick</label><br>
+	  				<input type="text" name="nickname" disabled><label>&Tab;Nick</label><br>
 					
 	  				<input type="email" name="e-mail" required><label>&Tab;E-mail &lpar;<i>exam@ple.pl</i>&rpar;</label><br>
 	  				
