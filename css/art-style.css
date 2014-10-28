@@ -25,6 +25,11 @@ a[href="#newcomment"] {
 
 :target { outline: solid red }
 
+p{
+	width: 50%;
+	margin: 20px;
+}
+
 p:not(.par){
 	color: #A91E1E;
 }
@@ -95,8 +100,8 @@ div p:last-of-type {
 }
 
 #rect4 {
-    width: 200px;
-    height: 200px;
+    width: 650px;
+    height: 1000px;
     position: static;
     margin: 50px;
     float:right;
