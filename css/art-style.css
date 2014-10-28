@@ -5,16 +5,18 @@ h4:active{
 }
 
 body{
-	background-image: url("../images/paint.png");
+	background-image: url("../images/muminki.bmp");
 	background-repeat: repeat-x;
 	background-attachment: scroll;
+	background-color: #BBCAB0;
 
 }
 
 div{
+	margin: 10px;
 	border-width: 10px;
-	border-style: dashed;
-	border-color: red;
+	border-style: dotted;
+	border-color: green;
 }
 
 a[href="#newcomment"] {
@@ -59,4 +61,49 @@ div p:last-of-type {
   display: block;
 }
 
+#rect1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1000px; 
+    left: 500px;
+    opacity: 0.6;
+    background: green;
+}
+
+#rect2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: left;
+    top: 20px; 
+    left: 20px;
+    margin: 30px;
+    margin-left: 100px;
+    background: yellow;
+}
+
+#rect3 {
+    width: 100px;
+    height: 130px;
+    position: fixed;
+    bottom: 80px; 
+    right: 20px;
+    margin: 50px;
+    padding: 50px;
+    background: red;
+}
+
+#rect4 {
+    width: 200px;
+    height: 200px;
+    position: static;
+    margin: 50px;
+    float:right;
+    background: grey;
+}
+
+details{
+	clear: right;
+}
 

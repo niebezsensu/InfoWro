@@ -2,4 +2,9 @@ body {
 	background-image: url("../images/krasnal.png");
 	background-repeat: no-repeat;
 	background-position: top right;
+	background-attachment: fixed;
+}
+
+p{
+	width: 200px;
 }
