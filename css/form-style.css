@@ -15,16 +15,6 @@ h1:active{
 	color:red;
 }
 
-
-
-/*
-option:checked{
-	background-color: red;
-	color: green;
-	font-style: italic;
-}
-*/
-
 form{
 	width: 50%;
 	margin-left: 100px;
@@ -58,4 +48,8 @@ a:link{
 
 a:visited{
 	color: purple;
+}
+
+input[type="checkbox"]:checked {
+  display: none;  
 }
