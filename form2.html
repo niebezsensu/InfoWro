@@ -5,31 +5,31 @@
 		<title>A teraz cos o sobie</title>
 	</head>
 
-	<body>
+	<body style="color:blue">
 		<h1>Wrocław</h1>
 		<p><strong><a href="main.html">Strona główna</a></strong></p>
 		<h2>Wypełnij formularz</h2>
 
-		<form action="https://www.google.pl" method="post">
+		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
 			<fieldset>
 				<legend><strong>Dane</strong></legend>
 				<p>
-					<label>Your favourite color is: 
+					<label>Twój ulubiony kolor: 
 						<input type = "color" autofocus="autofocus"/>
 					</label>
 				</p>
 				<p>
-					<label>Your important date is: 
+					<label>Ważna dla Ciebie data: 
 						<input type = "date" />
 					</label>
 				</p>
 				<p>
-					<label>Your birthday's month is: 
+					<label>Twój miesiąc urodzenia to: 
 						<input type = "month" /> 
 					</label>
 				</p>
 				<p>
-					<label>How many points do you give for the website:  
+					<label>Jak oceniasz tą stronę?:  
 						0<input type = "range" 
 						min - "0"
 						max - "20"
@@ -37,15 +37,26 @@
 					</label>
 				</p>
 				<p>
-					<label>Search:  
-						<input type = "search" placeholder = "search query" />
+					<label>Wyszukaj hasło:  
+						<input type = "search" placeholder = "Wrocław muzea" />
 					</label>
 				</p>
 				<p>
 					<label>URL:  
+<<<<<<< HEAD
 						<input type = "url" placeholder ="www.google.pl" />
 					</label>
 				</p>
+=======
+						<input type = "url" placeholder ="https://www.google.pl/" />
+					</label>
+				</p>
+
+				<p>
+					<input type="submit" value="Wyślij">
+					<input type="reset" value="Wyczyść">
+				</p>
+>>>>>>> 95d3f6ee8dc7b1420b0cfde8dfe42f96faabfc77
 				
 		</form>
 

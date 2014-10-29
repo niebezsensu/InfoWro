@@ -1,0 +1,114 @@
+
+
+h4:active{
+	color:red;
+}
+
+body{
+	background-image: url("../images/muminki.bmp");
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-color: #BBCAB0;
+
+}
+
+div{
+	margin: 10px;
+	border-width: 10px;
+	border-style: dotted;
+	border-color: green;
+}
+
+a[href="#newcomment"] {
+	background-color:gold
+}
+
+:target { outline: solid red }
+
+p{
+	width: 50%;
+	margin: 20px;
+}
+
+p:not(.par){
+	color: #A91E1E;
+}
+
+p:first-child {
+    background-color: lime;
+}
+
+p:last-child {
+    background-color: pink;
+}
+
+p:nth-last-child(even) {
+      color: blue;
+}
+
+p:nth-child(2n+1) {
+      font-style: italic;
+}
+
+p:only-child {
+	background: #A0B1E7;
+}
+
+div p:last-of-type {
+  color: lime;
+}
+
+#newcomment {
+  display: none;
+}
+
+#newcomment:target {
+  display: block;
+}
+
+#rect1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1000px; 
+    left: 500px;
+    opacity: 0.6;
+    background: green;
+}
+
+#rect2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: left;
+    top: 20px; 
+    left: 20px;
+    margin: 30px;
+    margin-left: 100px;
+    background: yellow;
+}
+
+#rect3 {
+    width: 100px;
+    height: 130px;
+    position: fixed;
+    bottom: 80px; 
+    right: 20px;
+    margin: 50px;
+    padding: 50px;
+    background: red;
+}
+
+#rect4 {
+    width: 650px;
+    height: 1000px;
+    position: static;
+    margin: 50px;
+    float:right;
+    background: grey;
+}
+
+details{
+	clear: right;
+}
+

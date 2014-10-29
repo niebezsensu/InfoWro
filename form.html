@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Zarejestruj się</title>
+
+		<link rel="stylesheet" href="css/form-style.css" type="text/css"/>
+
 	</head>
 
 	<body>
@@ -10,7 +13,9 @@
 		<p><strong><a href="main.html">Strona główna</a></strong></p>
 		<h2>Wypełnij formularz</h2>
 
-		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
+		<p></p>
+
+		<form id="form1" action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
 			<fieldset>
 				<legend><strong>Dane</strong></legend>
 				<p>
@@ -19,7 +24,7 @@
 					
 	  				<input type="text" name="surname" required><label>&Tab;Nazwisko</label><br>
 	  				
-	  				<input type="text" name="nickname"><label>&Tab;Nick</label><br>
+	  				<input type="text" name="nickname" disabled><label>&Tab;Nick</label><br>
 					
 	  				<input type="email" name="e-mail" required><label>&Tab;E-mail &lpar;<i>exam@ple.pl</i>&rpar;</label><br>
 	  				
@@ -74,8 +79,8 @@
 				</p>
 
 				<p>
-					<input type="submit" value="Wyślij">
-					<input type="reset" value="Wyczyść">
+					<input type="submit" formnovalidate value="Wyślij"/>
+					<input type="reset" value="Wyczyść"/>
 				</p>
 			</fieldset>
 		</form>

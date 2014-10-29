@@ -1,0 +1,55 @@
+
+body{
+	background-color: gray;
+}
+
+#form1{
+	background-color: #DADADA;
+}
+
+h1:hover{
+	color: yellow;
+}
+
+h1:active{
+	color:red;
+}
+
+form{
+	width: 50%;
+	margin-left: 100px;
+}
+
+input:disabled {
+    background: #DADADA;
+}
+
+input:enabled {
+    background: yellow;
+}
+
+input:focus{
+	background: green;
+}
+
+input:required{
+	background-color: red;
+}
+
+p:empty {
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+
+a:link{
+	color: white;
+}
+
+a:visited{
+	color: purple;
+}
+
+input[type="checkbox"]:checked {
+  display: none;  
+}
