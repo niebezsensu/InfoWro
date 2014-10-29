@@ -51,6 +51,10 @@ p:nth-last-child(even) {
 p:nth-child(2n+1) {
       font-style: italic;
       font-size: 120%;
+      font-family: monospace;
+      line-height: 0.9em;
+      font-variant: small-caps;
+      font-weight: bold;
 }
 
 p:only-child {
