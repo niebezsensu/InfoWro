@@ -36,10 +36,12 @@ p:not(.par){
 
 p:first-child {
     background-color: lime;
+    font-size: 20pt;
 }
 
 p:last-child {
     background-color: pink;
+    font-size: 2em;
 }
 
 p:nth-last-child(even) {
@@ -48,6 +50,7 @@ p:nth-last-child(even) {
 
 p:nth-child(2n+1) {
       font-style: italic;
+      font-size: 120%;
 }
 
 p:only-child {
