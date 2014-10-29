@@ -1,0 +1,161 @@
+﻿/*
+Napisz regułę CSS sprawiającą, że cały tekst zostanie powiększony 1,5 razy w odniesieniu od czcionki bazowej. Kolor czcionki czerwony.
+*/
+body {
+    font-size: 1.5em;
+    color: red;
+    height: 2000px;
+}
+/*
+Napisz regułę CSS, która dla wszystkich elementów h1 i h2:
+- pomniejsza dwukrotnie tekst,
+- obramuje tekst stylem przerywanym,
+- pomniejszy dwukrotnie margines względem tekstu.
+*/
+h1, h2 {
+    font-size: 0.5em;
+    border: 1px dashed black;
+    margin: 0.5em;
+}
+/*
+Napisz regułę CSS, która zmienia kolor wszystkich elementów zawierających atrybutu klasy = "greenMove" na zielono i przesunie je o 25 pikseli w dół i o 15 pikseli prawo.
+*/
+.greenMove {
+    color: green;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+/*
+Stwórz szablon strony, który zawiera header i dwa akapity. Za pomocą atrybutu float umieść dwa akapity w jednej kolumnie.
+*/
+#floating_paragraphs p {
+    float: left;
+}
+
+#floating_paragraphs {
+    background: black;
+    overflow: hidden;
+}
+
+#floating_paragraphs p:first-child {
+    background: blue;
+}
+
+#floating_paragraphs p:last-child {
+    background: green;
+}
+
+#paragraphs {
+    clear: left;
+}
+/*
+Napisz regułę CSS stosując atrybut background-image, która doda logo firmy na prawym dolnym roku strony. Logo ma być stale widoczne nawet wtedy gdy użytkownik przewija stronę w górę lub w dół.
+*/
+#logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 256px;
+    width: 256px;
+}
+/*
+Stwórz własną regułę CSS dla akapitu. W oparciu o CSS rozciągnij akapit:
+- na 20% szerokości strony,
+- na 80% szerokości strony z wyrównaniem tekstu do środka,
+- na 200px szerokości strony, 100px wysokości, tekst akapitu powinien przewijać się za pomocą scroli.
+*/
+#paragraphs p {
+    background: #ccc;
+}
+#paragraphs p:first-child {
+    width: 20%;
+}
+#paragraphs p:nth-child(2) {
+    width: 80%;
+    text-align: center;
+}
+#paragraphs p:last-child {
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+
+
+nav {
+    text-align: center;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+    background: #efefef;
+    padding: 0 20px;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover {
+    background: #FF6A00;
+}
+
+nav ul li:hover a {
+    color: #fff;
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px 30px;
+    color: #757575;
+    text-decoration: none;
+}
+
+nav ul ul {
+    background: #FF8900;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none;
+    border-bottom: 1px solid #FF5500;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #fff;
+}
+
+nav ul ul li a:hover {
+    background: #FF6A00;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+
