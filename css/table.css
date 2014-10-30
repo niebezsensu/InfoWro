@@ -1,0 +1,24 @@
+caption {
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    font-weight: bold;
+    padding: 10px;
+}
+table {
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    width: 50%;
+}
+th, thead, td {
+    border: 1px solid #ccc;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    background-color:#f8f8f8;
+}
+thead tr th:nth-child(even),
+tbody tr th:nth-child(odd) {
+    background-color: white;
+}

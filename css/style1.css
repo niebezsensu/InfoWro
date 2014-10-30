@@ -1,33 +1,22 @@
-﻿/*
-Napisz regułę CSS sprawiającą, że cały tekst zostanie powiększony 1,5 razy w odniesieniu od czcionki bazowej. Kolor czcionki czerwony.
-*/
+﻿
 body {
     font-size: 1.5em;
     color: red;
     height: 2000px;
 }
-/*
-Napisz regułę CSS, która dla wszystkich elementów h1 i h2:
-- pomniejsza dwukrotnie tekst,
-- obramuje tekst stylem przerywanym,
-- pomniejszy dwukrotnie margines względem tekstu.
-*/
+
 h1, h2 {
     font-size: 0.5em;
     border: 1px dashed black;
     margin: 0.5em;
 }
-/*
-Napisz regułę CSS, która zmienia kolor wszystkich elementów zawierających atrybutu klasy = "greenMove" na zielono i przesunie je o 25 pikseli w dół i o 15 pikseli prawo.
-*/
+
 .greenMove {
     color: green;
     margin-left: 15px;
     margin-top: 25px;
 }
-/*
-Stwórz szablon strony, który zawiera header i dwa akapity. Za pomocą atrybutu float umieść dwa akapity w jednej kolumnie.
-*/
+
 #floating_paragraphs p {
     float: left;
 }
@@ -48,9 +37,7 @@ Stwórz szablon strony, który zawiera header i dwa akapity. Za pomocą atrybutu
 #paragraphs {
     clear: left;
 }
-/*
-Napisz regułę CSS stosując atrybut background-image, która doda logo firmy na prawym dolnym roku strony. Logo ma być stale widoczne nawet wtedy gdy użytkownik przewija stronę w górę lub w dół.
-*/
+
 #logo {
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
@@ -60,12 +47,7 @@ Napisz regułę CSS stosując atrybut background-image, która doda logo firmy n
     height: 256px;
     width: 256px;
 }
-/*
-Stwórz własną regułę CSS dla akapitu. W oparciu o CSS rozciągnij akapit:
-- na 20% szerokości strony,
-- na 80% szerokości strony z wyrównaniem tekstu do środka,
-- na 200px szerokości strony, 100px wysokości, tekst akapitu powinien przewijać się za pomocą scroli.
-*/
+
 #paragraphs p {
     background: #ccc;
 }
