@@ -11,13 +11,13 @@ body{
 	background-color: rgba(255,255,255,0.3);
 	margin-left: auto ;
   	margin-right: auto ;
-  	background-image: radial-gradient(16px at 60px 50% , #000000 0%, #000000 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);
+  	background: radial-gradient(rgba(255,255,255,0.1), hsla(200, 15%, 70%, 0.3), hsla(200, 30%, 70%, 0.6)); /* Standard syntax */
 }
 
 #banner{
 	position: relative;
 	background-position: center;
-	width: 80%;
+	width: 75%;
 	/*background-color: rgba(0,0,0,0.3);*/
 	background-image: url("../images/wro.jpg");
 	opacity: 0.6;
@@ -26,6 +26,9 @@ body{
 	background-position: center;
 	margin-left: auto ;
   	margin-right: auto ;
+  	border: 2em solid transparent;
+  	border-image-source: url(../images/kre3.png);
+  	border-image-slice: 110;
 }
 
 nav{
