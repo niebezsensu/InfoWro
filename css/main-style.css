@@ -6,6 +6,7 @@ body{
 
 #light-background{
 	position: relative;
+	margin-top: 1em;
 	background-position: center;
 	width: 80%;
 	background-color: rgba(255,255,255,0.3);
@@ -14,10 +15,37 @@ body{
   	background: radial-gradient(rgba(255,255,255,0.1), hsla(200, 15%, 70%, 0.3), hsla(200, 30%, 70%, 0.6)); /* Standard syntax */
 }
 
+#enano{
+	opacity: 0.1;
+	transition: opacity 2s;
+	float: right;
+}
+
+#enano:hover{
+	opacity: 1;
+}
+
+#katedra, #ratusz, #most{
+	transition: opacity 2s, transform 2s;
+	float: right;
+	clear:right;
+	margin: 2em
+}
+
+#katedra:hover, #ratusz:hover, #most:hover{
+	opacity: 0.4;
+	transform: rotate(7deg);
+}
+
+section{
+	padding-left: 4em;
+}
+
 #banner{
 	position: relative;
 	background-position: center;
 	width: 75%;
+	padding-top: 10em;
 	/*background-color: rgba(0,0,0,0.3);*/
 	background-image: url("../images/wro.jpg");
 	opacity: 0.6;
@@ -29,6 +57,7 @@ body{
   	border: 2em solid transparent;
   	border-image-source: url(../images/kre3.png);
   	border-image-slice: 110;
+  	border-image-repeat: repeat;; 
 }
 
 nav{
@@ -64,6 +93,7 @@ a:active {
 	right: 10%;
 	text-align: right;
 	padding-top: 5%;
+	float: right;
 }
 
 #wro{
