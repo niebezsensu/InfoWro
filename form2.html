@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<title>A teraz cos o sobie</title>
+	</head>
+
+	<body style="color:blue">
+		<h1>Wrocław</h1>
+		<p><strong><a href="main.html">Strona główna</a></strong></p>
+		<h2>Wypełnij formularz</h2>
+
+		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
+			<fieldset>
+				<legend><strong>Dane</strong></legend>
+				<p>
+					<label>Twój ulubiony kolor: 
+						<input type = "color" autofocus="autofocus"/>
+					</label>
+				</p>
+				<p>
+					<label>Ważna dla Ciebie data: 
+						<input type = "date" />
+					</label>
+				</p>
+				<p>
+					<label>Twój miesiąc urodzenia to: 
+						<input type = "month" /> 
+					</label>
+				</p>
+				<p>
+					<label>Jak oceniasz tą stronę?:  
+						0<input type = "range" 
+						min - "0"
+						max - "20"
+						value - "10"/> 20 
+					</label>
+				</p>
+				<p>
+					<label>Wyszukaj hasło:  
+						<input type = "search" placeholder = "Wrocław muzea" />
+					</label>
+				</p>
+				<p>
+					<label>URL:  
+						<input type = "url" placeholder ="https://www.google.pl/" />
+					</label>
+				</p>
+
+				<p>
+					<input type="submit" value="Wyślij">
+					<input type="reset" value="Wyczyść">
+				</p>
+				
+		</form>
+
+		<footer>
+			<p>&copy; 2014 Karolina i Asia. All rights reserved.</p>
+		</footer>
+	</body>
+
+</html>

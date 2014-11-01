@@ -3,147 +3,138 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Strona główna</title>
-		<style>
-			body {background-color:lightgrey;
-			}
-
-			#small_table{
-			    border-collapse: collapse;
-			    background-color: #f1f1c1;
-			}
-			th, td {
-			    padding: 5px;   
-			}
-		</style>
+		<link rel="stylesheet" href="css/main-style.css" type="text/css"/>
 	</head>
 
 	<body>
-		<h1>Wrocław</h1>
+		<div id="light-background">
+			<h1>Wrocław</h1>
 
-		<p style = "text-align:right">
-		 <a href = "MAILTO:deitel@deitel.com"><strong> KONTAKT</strong> </a></p>
-		<p style = "text-align:right"><strong><a href="form.html">Zarejestruj się!</a></strong></p>
-		<p style = "text-align:right"><strong><a href="form2.html">A teraz cos o sobie!</a></strong></p>
+			<p style = "text-align:right">
+			 <a href = "MAILTO:deitel@deitel.com"><strong> KONTAKT</strong> </a></p>
+			<p style = "text-align:right"><strong><a href="form.html">Zarejestruj się!</a></strong></p>
+			<p style = "text-align:right"><strong><a href="form2.html">A teraz cos o sobie!</a></strong></p>
 
-		
-		<nav>
-		  <a href="news.html">Wiadomości</a> |
-		  <a href="articles.html">Artykuły</a> |
-		  <a href="#job">Ogłoszenia</a> |
-		  <a href="sport.html">Sport</a> |
-		  <a href="art.html">Sztuka</a>
-		</nav>
+			
+			<nav>
+			  <a href="columns.html">Wiadomości</a> |
+			  <a href="menu.html">Artykuły</a> |
+			  <a href="#job">Ogłoszenia</a> |
+			  <a href="sport.html">Sport</a> |
+			  <a href="art.html">Sztuka</a>
+			</nav>
 
-		<h2> Piękne miejsca we Wrocławiu </h2>
+			<h2> Piękne miejsca we Wrocławiu </h2>
 
-		<section>
 			<section>
-				<ul style="list-style-type:none">
-					<li><strong><a href="article.html">Michael Jackson przyjeżdża do Wrocławia!</a></strong></li>
-					<li><strong>Wybudują nowe drogi rowerowe</strong></li>
-				</ul>
+				<section>
+					<ul style="list-style-type:none">
+						<li><strong><a href="article.html">Michael Jackson przyjeżdża do Wrocławia!</a></strong></li>
+						<li><strong>Wybudują nowe drogi rowerowe</strong></li>
+					</ul>
+				</section>
+
+				<section>
+					<ul style="list-style-type:none">
+						<li><strong><a href="article.html">Artykuł na inny temat</a></strong></li>
+						<li><strong>Wybudują nowe drogi rowerowe</strong></li>
+					</ul>
+				</section>
+
+				<section>
+					<ul style="list-style-type:none">
+						<li><strong><a href="article.html">Artykuł na jeszcze inny temat</a></strong></li>
+						<li><strong>Wybudują nowe drogi rowerowe</strong></li>
+					</ul>
+				</section>
 			</section>
 
 			<section>
-				<ul style="list-style-type:none">
-					<li><strong><a href="article.html">Artykuł na inny temat</a></strong></li>
-					<li><strong>Wybudują nowe drogi rowerowe</strong></li>
-				</ul>
+				<article>
+					<strong><h3>&#60;Widok na katedrę&#62; </h3></strong>
+					<a href ="http://pl.wikipedia.org/wiki/Archikatedra_%C5%9Bw._Jana_Chrzciciela_we_Wroc%C5%82awiu">
+				    	<img src="images/wroclaw.jpg" alt="Widok na katedrę" width="450" height="450"></a>
+				    	<aside>
+				    		<p>W historii sztuki i kultury utarło się, by ogólnie nazywać katedrami wielkie kościoły romańskie i gotyckie, niekoniecznie stanowiące katedry we właściwym sensie.</p>
+				    	</aside>
+			    </article>
+
+			    <article>
+				    <strong><h3> &#60;Ratusz&#62; </h3></th></strong>
+				    <a href ="http://pl.wikipedia.org/wiki/Ratusz_we_Wroc%C5%82awiu">
+				    	<img src="images/ratusz.jpg" alt="Widok na rynek" width="450" height="338"></a>
+				    	<aside>
+				    		<p>(Nem. Rathaus, dosł. dom rady) – reprezentacyjny budynek użyteczności publicznej, zwykle tradycyjna siedziba samorządowych władz miejskich. Budowany był najczęściej na planie prostokąta i nadawano mu formę monumentalną</p>
+				    	</aside>
+			    </article>
+
+			    <article>
+				    <strong><h3> &#60;Widok na Most Zwierzyniecki&#62; </h3></strong>
+				    <a href ="http://pl.wikipedia.org/wiki/Most_Zwierzyniecki_we_Wroc%C5%82awiu">
+				    	<img src="images/most.jpg" alt="Widok na Most Zwierzyniecki" width="450" height="301"></a>
+			    </article>
+
 			</section>
+
 
 			<section>
-				<ul style="list-style-type:none">
-					<li><strong><a href="article.html">Artykuł na jeszcze inny temat</a></strong></li>
-					<li><strong>Wybudują nowe drogi rowerowe</strong></li>
-				</ul>
+				<table id="small_table" style="width:90%">
+					<tr>
+						<th>Ogłoszenia</th>
+					</tr>
+					<tr>
+						<th rowspan="5"><img src="images/uwaga.jpg" alt="Ogłoszenia" width="100" height="100"></th>
+						<td>Sprzedam kotka</td>
+					</tr>
+					<tr>
+						<td>Kupię kotka</td>
+					</tr>
+					<tr>
+						<td>Zamienię telewizor na zmywarkę</td>
+					</tr>
+					<tr>
+						<td>Kupię ciągnik</td>
+					</tr>
+					<tr>
+						<td>Korepetycje z chińskiego</td>
+					</tr>
+				</table>
 			</section>
-		</section>
 
-		<section>
-			<article>
-				<strong><h3>&#60;Widok na katedrę&#62; </h3></strong>
-				<a href ="http://pl.wikipedia.org/wiki/Archikatedra_%C5%9Bw._Jana_Chrzciciela_we_Wroc%C5%82awiu">
-			    	<img src="images/wroclaw.jpg" alt="Widok na katedrę" width="450" height="450"></a>
-			    	<aside>
-			    		<p>W historii sztuki i kultury utarło się, by ogólnie nazywać katedrami wielkie kościoły romańskie i gotyckie, niekoniecznie stanowiące katedry we właściwym sensie.</p>
-			    	</aside>
-		    </article>
-
-		    <article>
-			    <strong><h3> &#60;Ratusz&#62; </h3></th></strong>
-			    <a href ="http://pl.wikipedia.org/wiki/Ratusz_we_Wroc%C5%82awiu">
-			    	<img src="images/ratusz.jpg" alt="Widok na rynek" width="450" height="338"></a>
-			    	<aside>
-			    		<p>(Nem. Rathaus, dosł. dom rady) – reprezentacyjny budynek użyteczności publicznej, zwykle tradycyjna siedziba samorządowych władz miejskich. Budowany był najczęściej na planie prostokąta i nadawano mu formę monumentalną</p>
-			    	</aside>
-		    </article>
-
-		    <article>
-			    <strong><h3> &#60;Widok na Most Zwierzyniecki&#62; </h3></strong>
-			    <a href ="http://pl.wikipedia.org/wiki/Most_Zwierzyniecki_we_Wroc%C5%82awiu">
-			    	<img src="images/most.jpg" alt="Widok na Most Zwierzyniecki" width="450" height="301"></a>
-		    </article>
-
-		</section>
-
-
-		<section>
-			<table id="small_table" style="width:100%">
-				<tr>
-					<th>Ogłoszenia</th>
-				</tr>
-				<tr>
-					<th rowspan="5"><img src="images/uwaga.jpg" alt="Ogłoszenia" width="100" height="100"></th>
-					<td>Sprzedam kotka</td>
-				</tr>
-				<tr>
-					<td>Kupię kotka</td>
-				</tr>
-				<tr>
-					<td>Zamienię telewizor na zmywarkę</td>
-				</tr>
-				<tr>
-					<td>Kupię ciągnik</td>
-				</tr>
-				<tr>
-					<td>Korepetycje z chińskiego</td>
-				</tr>
-			</table>
-		</section>
-
-		<h2>Dla studentow</h2>
-		<a href="ftp://ftp.kivuto.com/pub/docs/Working_with_Image_Files.pdf" download="book">Ściągnij książkę</a><br>
-		<a href="http://www.inyourpocket.com/data/download/wroclaw.pdf" download="guide">Ściągnij przewodnik po Wrocławiu po angielsku</a>
-		
-		<ul>
-			<a name="job"> </a>
-			<li><strong>Znajdź pracę --> </strong>
-			<a href ="http://praca.dlastudenta.pl/">P.R.A.C.A</a>
-		</li>
-			<li><strong>Japoński noblista we Wrocławiu:</strong>
-				<ul>
-					<li>Komitet Noblowski opisał tegoroczną nagrodę z fizyki pięknym hasłem: „Za nowe światło, które rozświetliło świat”.</li>
-					<li>Nagrodę otrzymali:
+			<h2>Dla studentow</h2>
+			<a href="ftp://ftp.kivuto.com/pub/docs/Working_with_Image_Files.pdf" download="book">Ściągnij książkę</a><br>
+			<a href="http://www.inyourpocket.com/data/download/wroclaw.pdf" download="guide">Ściągnij przewodnik po Wrocławiu po angielsku</a>
+			
+			<ul>
+				<a name="job"> </a>
+				<li><strong>Znajdź pracę --> </strong>
+				<a href ="http://praca.dlastudenta.pl/">P.R.A.C.A</a>
+			</li>
+				<li><strong>Japoński noblista we Wrocławiu:</strong>
+					<ul>
+						<li>Komitet Noblowski opisał tegoroczną nagrodę z fizyki pięknym hasłem: „Za nowe światło, które rozświetliło świat”.</li>
+						<li>Nagrodę otrzymali:
+						<ol>
+							<li>Isamu Akasaki</li>
+							<li>Hiroshi Amano</li>
+							<li>Shuji Nakamura</li>
+						</ol>
+					</li>
+				</li>
+				<li>Troje nowych profesorow belwederskich:
 					<ol>
-						<li>Isamu Akasaki</li>
-						<li>Hiroshi Amano</li>
-						<li>Shuji Nakamura</li>
+						<li>prof. Henryk Bujak (Uniwersytet Przyrodniczy)</li>
+						<li>prof. Grażyna Gościniak (Uniwersytet Medyczny)</li>
+						<li>prof. Dariusz Janczak (Uniwersytet Medyczny)</li>
 					</ol>
 				</li>
-			</li>
-			<li>Troje nowych profesorow belwederskich:
-				<ol>
-					<li>prof. Henryk Bujak (Uniwersytet Przyrodniczy)</li>
-					<li>prof. Grażyna Gościniak (Uniwersytet Medyczny)</li>
-					<li>prof. Dariusz Janczak (Uniwersytet Medyczny)</li>
-				</ol>
-			</li>
-		</ul>
-		<li><strong>Koniec koncertów na Wyspie Słodowej</strong></li>
-	
-		<footer>
-			<p>&copy; 2014 Karolina i Asia. All rights reserved.</p>
-		</footer>
+			</ul>
+			<li><strong>Koniec koncertów na Wyspie Słodowej</strong></li>
+		
+			<footer>
+				<p>&copy; 2014 Karolina i Asia. All rights reserved.</p>
+			</footer>
+		</div>
 	</body>
 
 </html>

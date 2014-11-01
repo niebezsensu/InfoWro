@@ -1,3 +1,7 @@
+body{
+    background-color: #FFE9AB;
+}
+
 caption {
     text-align: center;
     background-color: #eee;
@@ -6,6 +10,11 @@ caption {
     font-weight: bold;
     padding: 10px;
 }
+
+caption:hover{
+    background-color: yellow;
+}
+
 table {
     border: 1px solid #ccc;
     margin: 20px auto;
@@ -18,7 +27,21 @@ th, thead, td {
     padding: 20px;
     background-color:#f8f8f8;
 }
-thead tr th:nth-child(even),
-tbody tr th:nth-child(odd) {
-    background-color: white;
+thead tr th:nth-child(even){
+    background-color: yellow;
+    border: 5pt dashed red;
+}
+
+tbody tr td{
+    border-style: dotted;
+    border-width: 3pt;
+    border-color: purple;
+}
+
+tbody tr td:nth-child(odd) {
+    background-color: green;
+}
+
+tfoot tr td{
+    background-color: #F0BA25;
 }

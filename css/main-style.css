@@ -1,0 +1,24 @@
+
+body{
+	background-image: url("../images/tlo1.png");
+}
+
+#light-background{
+	position: relative;
+	background-position: center;
+	width: 60%;
+	height: 50%;
+	background-color: rgba(255,255,255,0.3);
+	padding: 5%;
+	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+#small_table{
+	border-collapse: collapse;
+	background-color: #f1f1c1;
+}
+
+th, td {
+		padding: 5px;   
+}
