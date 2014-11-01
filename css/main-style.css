@@ -1,17 +1,82 @@
 
 body{
 	background-image: url("../images/tlo1.png");
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
 #light-background{
 	position: relative;
 	background-position: center;
-	width: 60%;
-	height: 50%;
+	width: 80%;
 	background-color: rgba(255,255,255,0.3);
-	padding: 5%;
 	margin-left: auto ;
   	margin-right: auto ;
+  	background-image: radial-gradient(16px at 60px 50% , #000000 0%, #000000 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);
+}
+
+#banner{
+	position: relative;
+	background-position: center;
+	width: 80%;
+	/*background-color: rgba(0,0,0,0.3);*/
+	background-image: url("../images/wro.jpg");
+	opacity: 0.6;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+nav{
+	font-size: 2em;
+	width: 100%;
+	text-align: center;
+  	background-image: linear-gradient(to right, rgba(255,0,0,0), hsla(200, 30%, 70%, 0.8));
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link {
+    color: #2C3336;
+}
+
+a:visited {
+    color: #3B494E;
+}
+
+a:hover {
+    color: #455C64;
+}
+
+a:active {
+    color: #3B494E;
+}
+
+#contact{
+	position: relative;
+	top: 10%;
+	right: 10%;
+	text-align: right;
+	padding-top: 5%;
+}
+
+#wro{
+	font-family: 'Indie Flower', cursive;
+	font-size: 5em;
+	text-shadow: 0.05em 0.05em #9F9F9F;
+	padding-left: 5%;
+}
+
+#wro2{
+	font-family: 'Indie Flower', cursive;
+	font-style: italic;
+	font-size: 3em;
+	text-align: right;
+	text-shadow: 0.05em 0.05em #9F9F9F;
+	padding-right: 5%;
 }
 
 #small_table{
