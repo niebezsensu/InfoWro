@@ -83,6 +83,10 @@ section{
 
 .enanos ul li { padding: 2px 5px; background-color: hsla(200, 30%, 70%, 0.2); text-align: center; -webkit-box-flex: 1; box-flex: 1; min-width: 100px; border-right: 1px solid rgba(0,0,0,0.3); }
 
+.enanos ul li p{font-size: 1em; text-align: left;}
+
+.enanos ul li:hover{width: 300px;}
+
 @media all and (max-width: 850px) {
   .enanos {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
