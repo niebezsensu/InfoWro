@@ -4,8 +4,13 @@ body{
 	font-family: 'Alegreya Sans', sans-serif;
 }
 
+section{
+	clear: left;
+}
+
 #light-background{
 	position: relative;
+	border-radius: 10px;
 	margin-top: 1em;
 	background-position: center;
 	width: 80%;
@@ -16,6 +21,9 @@ body{
 }
 
 #enano{
+	position: fixed;
+	bottom: 2em; 
+    right: 1em;
 	opacity: 0.1;
 	transition: opacity 2s;
 	float: right;
@@ -29,7 +37,9 @@ body{
 	transition: opacity 2s, transform 2s;
 	float: right;
 	clear:right;
-	margin: 2em
+	margin: 2em;
+	border: 1px solid black;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 #katedra:hover, #ratusz:hover, #most:hover{
@@ -57,25 +67,54 @@ section{
   	border: 2em solid transparent;
   	border-image-source: url(../images/kre3.png);
   	border-image-slice: 110;
-  	border-image-repeat: repeat;; 
+  	border-image-repeat: repeat;
+}
+
+.enanos {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+.enanos ul{
+	display: -webkit-box; display: box; width: 100%;
+}
+
+.enanos ul li { padding: 2px 5px; background-color: hsla(200, 30%, 70%, 0.2); text-align: center; -webkit-box-flex: 1; box-flex: 1; min-width: 100px; border-right: 1px solid rgba(0,0,0,0.3); }
+
+@media all and (max-width: 850px) {
+  .enanos {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .enanos {
+    flex-direction: column;
+  }
 }
 
 nav{
-	font-size: 1em;
+	padding: 0.2em;
+	font-size: 0.8em;
+	border-radius: 10px;
   	background-image: linear-gradient(to right, rgba(255,0,0,0), hsla(200, 30%, 70%, 0.8));
   	/*display: flex;  or inline-flex */
-  	display: -webkit-box; display: -moz-box; display: box; -webkit-box-pack: center; -moz-box-align: center; box-align: center; }
-	nav ul { display: -webkit-box; display: -moz-box; display: box; width: 100%; }
-	nav ul li { padding: 2px 5px; background-color: hsla(200, 30%, 70%, 0.8); text-align: center; -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -webkit-transition: width 0.5s ease-out; -moz-transition: 0.5s; min-width: 100px; border-right: 1px solid ccc; }
-	nav ul li:first-of-type { margin-left: 0; }
-	nav ul li:last-of-type { margin-right: 0; border-right: none; }
-	nav ul li a { text-decoration: none; color: white; font-size: 2em; }
-	nav ul li:hover { width: 200px; background-color: hsla(200, 30%, 90%, 0.6); 
-}
+  	display: box; box-align: center; 
+ }
+
+nav ul {display: -webkit-box; display: box; width: 100%; }
+nav ul li { padding: 2px 5px; background-color: hsla(200, 30%, 70%, 0.2); text-align: center; -webkit-box-flex: 1; box-flex: 1; min-width: 100px; border-right: 1px solid rgba(0,0,0,0.3); }
+nav ul li:first-of-type { margin-left: 0; }
+nav ul li:last-of-type { margin-right: 0; border-right: none; }
+nav ul li a { text-decoration: none; font-size: 2em; }
+nav ul li:hover { width: 20em; background-color: hsla(200, 30%, 90%, 0.2); }
 
 ul{
 	list-style-type:none;
-	-webkit-padding-start: 0px;
+	-webkit-padding-start: 0;
 }
 
 a{
@@ -98,19 +137,26 @@ a:active {
     color: #3B494E;
 }
 
+h2{
+	font-family: 'Indie Flower', cursive;
+	text-align: right;
+	margin-right: 5%;
+}
+
 #contact{
-	position: relative;
+	background-color: rgba(255,255,255,0.5);
+	padding: 1em;
 	top: 10%;
 	right: 10%;
 	text-align: right;
-	padding-top: 5%;
 	float: right;
+	margin-right: 2em;
 }
 
 #wro{
 	font-family: 'Indie Flower', cursive;
 	font-size: 5em;
-	text-shadow: 0.05em 0.05em #9F9F9F;
+	text-shadow: 0.05em 0.05em hsla(200, 30%, 70%, 0.8);
 	padding-left: 5%;
 }
 
@@ -119,7 +165,7 @@ a:active {
 	font-style: italic;
 	font-size: 3em;
 	text-align: right;
-	text-shadow: 0.05em 0.05em #9F9F9F;
+	text-shadow: 0.05em 0.05em hsla(200, 30%, 70%, 0.8);
 	padding-right: 5%;
 }
 
