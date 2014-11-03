@@ -8,6 +8,10 @@ section{
 	clear: left;
 }
 
+aside{
+	-webkit-column-count: 2;
+}
+
 #light-background{
 	position: relative;
 	border-radius: 10px;
@@ -72,8 +76,7 @@ section{
 
 .enanos {
   display: flex;
-  flex-flow: row wrap;
-  /* This aligns items to the end line on main-axis */
+  flex-flow: row;
   justify-content: flex-end;
 }
 
