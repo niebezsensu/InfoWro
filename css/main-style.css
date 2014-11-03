@@ -9,7 +9,15 @@ section{
 }
 
 aside{
+	padding: 1em;
 	-webkit-column-count: 2;
+	-webkit-column-gap: 1em;
+	-webkit-column-rule: 1px outset rgba(0,0,0,0.3);
+	margin-top: 1em;
+}
+
+article{
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 #light-background{
@@ -40,7 +48,6 @@ aside{
 #katedra, #ratusz, #most{
 	transition: opacity 2s, transform 2s;
 	float: right;
-	clear:right;
 	margin: 2em;
 	border: 1px solid black;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -52,7 +59,8 @@ aside{
 }
 
 section{
-	padding-left: 4em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 #banner{
@@ -90,17 +98,29 @@ section{
 
 .enanos ul li:hover{width: 300px;}
 
-@media all and (max-width: 850px) {
-  .enanos {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
+@media all and (max-width: 550px) {
+  aside {
+    -webkit-column-count: 1;
+    clear: both;
+  }
+
+  #katedra, #ratusz, #most{
+	transition: opacity 2s, transform 2s;
+	float: right;
+	width: 100%;
+	margin: 2em;
+	border: 1px solid black;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   }
 }
 
-@media all and (max-width: 550px) {
-  .enanos {
-    flex-direction: column;
-  }
+@font-face {
+    font-family: IndieFlower;
+    src: url(http://fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6hVuXpl7XtNjpLlhhhGlVqc.woff2);
+}
+
+#arcls{
+	font-family: IndieFlower;
 }
 
 nav{
@@ -144,10 +164,18 @@ a:active {
     color: #3B494E;
 }
 
-h2{
+h2, h3{
 	font-family: 'Indie Flower', cursive;
-	text-align: right;
 	margin-right: 5%;
+}
+
+h2{
+	text-align: right;
+}
+
+#end1, #end2, #end3{
+	clear: both;
+	width: 60%;
 }
 
 #contact{
@@ -181,6 +209,7 @@ h2{
 #small_table{
 	border-collapse: collapse;
 	background-color: #f1f1c1;
+	opacity: 0.5;
 }
 
 th, td {
