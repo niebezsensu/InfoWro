@@ -18,6 +18,14 @@ aside{
 
 article{
 	background-color: rgba(255, 255, 255, 0.1);
+	clear: both;
+}
+
+#jatki{
+	float: right;
+	margin: 1em;
+	margin-right: 2em;
+	opacity: 0.6;
 }
 
 #light-background{
@@ -115,12 +123,16 @@ section{
 }
 
 @font-face {
-    font-family: IndieFlower;
-    src: url(http://fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6hVuXpl7XtNjpLlhhhGlVqc.woff2);
+    font-family: Alegraya;
+    src: url(http://fonts.gstatic.com/s/alegreya/v7/4vRXIs1BEbKX6mQ7lGu1IxkAz4rYn47Zy2rvigWQf6w.woff2);
 }
 
 #arcls{
-	font-family: IndieFlower;
+	font-family: Alegraya;
+	background-color: rgba(200, 215, 255, 0.1);
+	width: 40%;
+	margin: 2em;
+	padding: 1em;
 }
 
 nav{
