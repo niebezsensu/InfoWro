@@ -1,0 +1,14 @@
+h1:active{
+	color:red;
+}
+
+body{
+	background-image: url("../images/emotikon.png");
+	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-position: center; 
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	background-repeat: repeat-y;
+
+}
