@@ -90,22 +90,6 @@ section{
   	border-image-repeat: repeat;
 }
 
-.enanos {
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-}
-
-.enanos ul{
-	display: -webkit-box; display: box; width: 100%;
-}
-
-.enanos ul li { padding: 2px 5px; background-color: hsla(200, 30%, 70%, 0.2); text-align: center; -webkit-box-flex: 1; box-flex: 1; min-width: 100px; border-right: 1px solid rgba(0,0,0,0.3); }
-
-.enanos ul li p{font-size: 1em; text-align: left;}
-
-.enanos ul li:hover{width: 300px;}
-
 @media all and (max-width: 550px) {
   aside {
     -webkit-column-count: 1;
@@ -135,17 +119,35 @@ section{
 	padding: 1em;
 }
 
+.enanos ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: -webkit-box; display: box; width: 100%;
+}
+
+.enanos ul li { padding: 2px 5px; opacity: 0.4; background-color: hsla(200, 30%, 70%, 0.2); text-align: center; -webkit-box-flex: 1; box-flex: 1; min-width: 100px; border-right: 1px solid rgba(0,0,0,0.3); }
+
+.enanos ul li:hover{width: 200px; opacity: 1;}
+
+.enanos ul li p{font-size: 1em; text-align: left;}
+
 nav{
 	padding: 0.2em;
 	font-size: 0.8em;
 	border-radius: 10px;
   	background-image: linear-gradient(to right, rgba(255,0,0,0), hsla(200, 30%, 70%, 0.8));
-  	/*display: flex;  or inline-flex */
-  	display: box; box-align: center; 
+}
+
+nav ul{
+  	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; 
  }
 
-nav ul {display: -webkit-box; display: box; width: 100%; }
-nav ul li { padding: 2px 5px; background-color: hsla(200, 30%, 70%, 0.2); text-align: center; -webkit-box-flex: 1; box-flex: 1; min-width: 100px; border-right: 1px solid rgba(0,0,0,0.3); }
+nav ul li { padding: 2px 5px; text-align: center; min-width: 50px; border-right: 1px solid rgba(0,0,0,0.3); }
 nav ul li:first-of-type { margin-left: 0; }
 nav ul li:last-of-type { margin-right: 0; border-right: none; }
 nav ul li a { text-decoration: none; font-size: 2em; }
