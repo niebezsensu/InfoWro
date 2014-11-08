@@ -1,17 +1,12 @@
-h1:active
-{
+h1:active{
 	color:red;
 }
 
 body
 {
-		
 		background-image: url("../images/emoticon.png");
-    		background-attachment: fixed;
-	    	background-position: 50% 190px;
+    	background-attachment: fixed;
+	    background-position: 50% 180px; 
 		background-repeat: no-repeat;
 		background-origin: border-box;
-		
-		
-		
 }
