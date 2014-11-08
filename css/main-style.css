@@ -4,10 +4,6 @@ body{
 	font-family: 'Alegreya Sans', sans-serif;
 }
 
-section{
-	clear: left;
-}
-
 aside{
 	padding: 1em;
 	-webkit-column-count: 2;
@@ -19,6 +15,76 @@ aside{
 article{
 	background-color: rgba(255, 255, 255, 0.1);
 	clear: both;
+}
+
+#inputs{
+	float: right;
+	margin: 2em;
+	width: 40%;
+}
+
+#inputs button{
+	font-family: 'Indie Flower', cursive;
+	clear: left;
+}
+
+#fb{
+	float: left;
+	padding-left: 2em;
+	padding: 1em;
+	opacity: 0.7;
+}
+
+#dane, #nrstring{
+	background-color: hsla(200, 30%, 70%, 0.7);
+	float: right;
+	margin-right: 1em;
+	margin-top: 0.5em;
+	opacity: 0.3;
+	font-size: 1.2em;
+}
+
+#nrstring{
+	width: 3em;
+}
+
+#losuj, #gotowe, #calc, #prop{
+	float: left;
+	padding-left: 0.5em;
+	margin-top: 0.5em;
+	font-size: 1.2em;
+	background-color: hsla(200, 30%, 75%, 0.7);
+	opacity: 0.5;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	width: 10em;
+	text-align: center;
+}
+
+#result, #result1, #result2, #result3, #result4{
+	font-size: 1.1em;
+	clear: left;
+	background-color: hsla(200, 30%, 75%, 0.1);
+}
+
+#hate{
+	float: left;
+	clear: both;
+	padding-left: 0.5em;
+	margin-top: 0.5em;
+	font-size: 1.2em;
+	background-color: hsla(200, 30%, 75%, 0.7);
+	opacity: 0.5;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+}
+
+label {
+    vertical-align: baseline;
+    font-size: 1.2em;
 }
 
 #jatki{
@@ -37,19 +103,32 @@ article{
 	background-color: rgba(255,255,255,0.3);
 	margin-left: auto ;
   	margin-right: auto ;
-  	background: radial-gradient(rgba(255,255,255,0.1), hsla(200, 15%, 70%, 0.3), hsla(200, 30%, 70%, 0.6)); /* Standard syntax */
+  	background: radial-gradient(rgba(255,255,255,0.01), hsla(200, 15%, 70%, 0.3), hsla(200, 30%, 70%, 0.6));
 }
 
 #enano{
 	position: fixed;
 	bottom: 2em; 
     right: 1em;
+    visibility: visible;
 	opacity: 0.1;
 	transition: opacity 2s;
-	float: right;
+}
+
+#siemka{
+	position: fixed;
+	bottom: 10em; 
+    right: 10em;
+	visibility: hidden;
+	opacity: 0.1;
+	transition: opacity 2s;
 }
 
 #enano:hover{
+	opacity: 1;
+}
+
+#siemka:hover{
 	opacity: 1;
 }
 
@@ -69,6 +148,7 @@ article{
 section{
 	padding-left: 2em;
 	padding-right: 2em;
+	clear: left;
 }
 
 #banner{
@@ -117,6 +197,7 @@ section{
 	width: 40%;
 	margin: 2em;
 	padding: 1em;
+	float: left;
 }
 
 .enanos ul{
@@ -243,7 +324,7 @@ th, td {
 
 }
 
-#blok > h2 {
+#blok h2 {
  	position:absolute;
   	margin:0;
   	white-space:nowrap;
@@ -255,10 +336,11 @@ th, td {
 @-webkit-keyframes przesun 
       {
         0% { -webkit-transform:translateX(0); padding-left:80%; }
-        100% { -webkit-transform:translateX(-100%); padding-left:80%; }
+        50% { -webkit-transform:translateX(-50%); padding-left:20%; }
+        100% { -webkit-transform:translateX(50%); padding-left:80%; }
       }
 
-     	#blok > h2:hover {
+     	#blok h2:hover {
         animation-play-state:paused;
         -webkit-animation-play-state:paused;
       }

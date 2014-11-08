@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<title>Strona główna</title>
 		<link rel="stylesheet" href="css/main-style.css" type="text/css"/>
+		<script type="text/javascript" src="js/js-main.js"></script>
+
 		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		
@@ -36,8 +38,12 @@
 			</nav>
 
 			<div>
+				<img id="siemka" src="images/siemka.png" alt="Siemka!" width="100" height="60">
+
 				<img id="enano" src="images/krasnal.png" alt="Krasnal" width="200" height="209">
 			</div>
+
+			<div id="fb"><img src="images/facebook.png" alt="facebook" width="42" height="42" onclick="fbalert()"></div><br>
 
 			<h2> Poznaj wrocławskie krasnale </h2>
 
@@ -78,6 +84,49 @@
 					</ul>
 				</div>
 			</section>
+
+
+			<div id="inputs">
+
+				<label for="hate">Nie lubię krasnali</label>
+				<button id="hate">X</button><br>
+	
+				<input id="dane" type="text" />
+				<button id="prop" onclick="Display()" >Zaproponuj krasnala</button>
+				<div id="result" >res</div>
+
+
+				<div id="expr">
+					<button id="losuj" onclick="getRand()">Losuj</button>
+					<div id="result1" >res1</div>
+					<input id="nrstring" type="text"></input>
+					<div id="result3" >res3</div>
+				</div>
+				<button id="calc" onclick="calculate()">Gotowe</button>
+				<div id="result2" >res2</div>
+				
+
+				<div id="result4"></div>
+
+	<!--
+	<script type="text/javascript">
+	var button = document.getElementById("hate");
+	console.log(button);
+	</script>-->
+
+				<script type="text/javascript">
+					document.getElementById("hate").addEventListener("click", function(){
+						if(document.getElementById("enano").style.visibility=="hidden"){
+							document.getElementById("enano").style.visibility="visible"
+						}else{
+						document.getElementById("enano").style.visibility="hidden";
+						document.getElementById("siemka").style.visibility="hidden";
+					}
+					}); 
+
+				</script>
+
+			</div>
 
 			<section>
 				<article>
@@ -136,10 +185,9 @@
 				</table>
 			</section>
 			<p></p>
-			<div id="blok">
-			<h2>Dla studentow</h2>
 
-		</div>
+			<div id="blok"><h2>Dla studentow</h2></div>
+
 			<a href="ftp://ftp.kivuto.com/pub/docs/Working_with_Image_Files.pdf" download="book">Ściągnij książkę</a><br>
 			<a href="http://www.inyourpocket.com/data/download/wroclaw.pdf" download="guide">Ściągnij przewodnik po Wrocławiu po angielsku</a>
 			
