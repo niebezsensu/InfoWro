@@ -19,6 +19,8 @@ function Display() {
 		document.getElementById("dane").value; 
 	}
 }
+
+
 /*
 document.getElementById("result").addEventListener("click", function(){
     document.getElementById("siemka").style.visibility="visible";
