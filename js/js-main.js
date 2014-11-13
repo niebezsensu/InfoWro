@@ -1,6 +1,4 @@
-//document.writeln("Witaj świecie");
-//window.alert("Witaj świecie");
-//document.getElementById("blok").innerHTML = "Witaj świecie";
+
 
 function Display() {
 
@@ -19,32 +17,12 @@ function Display() {
 		document.getElementById("dane").value; 
 	}
 }
-/*
-document.getElementById("result").addEventListener("click", function(){
-    document.getElementById("siemka").style.visibility="visible";
-});*/
-/*
-document.getElementById("myBtn").addEventListener("click", displayDate);
 
-function displayDate() {
-    document.getElementById("demo").innerHTML = "blalalalalalalalal";
-*/
 window.addEventListener("contextmenu", myFunction);
 function myFunction(){
     alert("Użyłeś prawego przycisku myszy!");
 }
 
-/*
-document.getElementById("hate").addEventListener("click", function(){
-	document.getElementById("enano").style.visibility="hidden";
-	document.getElementById("siemka").style.visibility="hidden";
-}); //NIE DZIALA
-
-
-document.getElementById("fb").addEventListener("click", function(){
-	window.alert("Nie marnuj czasu!");
-}); 
-*/
 function fbalert()
 {
 	window.alert("Nie marnuj czasu!");
@@ -75,32 +53,3 @@ while(i < 4)
 	++i;
 }
 
-/*
-function Hate(){
-		document.getElementById("enano").style.visibility="hidden";
-		document.getElementById("siemka").style.visibility="hidden";
-}
-
-function Like(){
-		document.getElementById("enano").style.visibility="visible";
-}
-*/
-/*
-
-instrukcje sterujące: case,  do...while, for
-
-+while,
-+document.writeln()
-+parseFloat()
-+button.addEventListener()
-+if...else
-+document.getElementById()
-+window.prompt()
-+window.alert()
-+window.addEventListener()
-+właściwość innerHTML
-+parseInt()
-+Math.random()
-+Math.floor()
-+zmienne globalne
-*/
