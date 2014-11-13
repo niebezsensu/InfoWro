@@ -11,6 +11,40 @@
 		<p><strong><a href="main.html">Strona główna</a></strong></p>
 		<h2>Wypełnij formularz</h2>
 
+		<button onclick="myFunction2()">Zaczynamy</button>
+
+				<p id="demo"></p>
+
+				<script>
+				function myFunction2() {
+    				var text = ""
+    				var i = 3;
+    				text += "<br>  Za " 
+    				do 
+    				{
+       					text  +=i + " ...  ";
+        				i--;
+    				}
+    				while (i >0)  
+    				document.getElementById("demo").innerHTML = text;
+					}
+					</script>
+
+			/*
+				function myFunction2() 
+				{
+    				var text = "";
+    				var i;
+    				text="za";
+    				for (i = 3; i>0; i--)
+    				{
+        				text += "  " + i + " .... ";
+   				 	}
+    				document.getElementById("demo").innerHTML = text;
+				}
+
+			*/
+
 		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain" autocomplete="on">
 			<fieldset>
 				<legend><strong>Dane</strong></legend>
