@@ -48,7 +48,7 @@ article{
 	width: 3em;
 }
 
-#losuj, #gotowe, #calc, #prop{
+#losuj, #gotowe, #calc, #prop, #day{
 	float: left;
 	padding-left: 0.5em;
 	margin-top: 0.5em;

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Strona główna</title>
 		<link rel="stylesheet" href="css/main-style.css" type="text/css"/>
-		<script type="text/javascript" src="js/js-main.js"></script>
+		<script type="text/javascript" src="js/js-main.js"/>
 
 		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -108,9 +108,9 @@
 
 				<div id="result4"></div>
 
-				<p>Click the button to display what day it is today: <button onclick="myFunction()">Sprawdz!</button></p>
+				<p>Sprawdź jaki jest dzień: <button id="day" onclick="myFunction()">Sprawdz!</button></p>
 
-				<p id="demo"></p>
+				<p id="dzien"></p>
 
 				<script>
 				function myFunction() 
@@ -119,28 +119,28 @@
    					var day;
     				switch (new Date().getDay()) {
        				case 0:
-            			day = "Sunday";
+            			day = "Niedziela";
             			break;
        		 		case 1:
-            			day = "Monday";
+            			day = "Poniedziałek";
             			break;
         			case 2:
-           				day = "Tuesday";
+           				day = "Wtorek";
             			break;
         			case 3:
-            			day = "Wednesday";
+            			day = "Środa";
             			break;
         			case 4:
-           		 		day = "Thursday";
+           		 		day = "Czwartek";
             			break;
        				case 5:
-            			day = "Friday";
+            			day = "Piątek";
             			break;
         			case  6:
-        		    	day = "Saturday";
+        		    	day = "Sobota";
             			break;
    		 		}
-    			document.getElementById("demo").innerHTML = "Today is " + day;
+    			document.getElementById("dzien").innerHTML = "Dzisiaj jest " + day;
 				}
 				</script>
 
