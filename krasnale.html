@@ -17,7 +17,9 @@
 			<img id="wally" src="images/wally.png" alt="Wally" width="150" height="164">
 			<div id="hide">
 				<h1>Gdzie jest Wally?</h1>
+				<button id="refr">Odśwież</button>
 			</div>
+
 		</div>
 
 
@@ -40,11 +42,22 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</section>
 
-			<img id="enano1" src="images/krasnal.png" alt="Krasnal" width="200" height="209">
+			<div id="rodzicKrasnali">
+				<img id="enano1" src="images/krasnal.png" alt="Krasnal" width="200" height="209">
 
-			<img id="enano2" src="images/krasnal2.png" alt="Krasnal" width="150" height="200">
+				<img id="enano2" src="images/krasnal2.png" alt="Krasnal" width="150" height="200">
 
-			<img id="enano3" src="images/krasnale3.png" alt="Krasnal" width="250" height="200">
+				<img id="enano3" src="images/krasnale3.png" alt="Krasnal" width="250" height="200">
+
+				<img id="enano4" src="images/sleepy.png" alt="Krasnal" width="250" height="200">
+			</div>
+			<div id="buttons">
+				<button id="insBef">Przestaw krasnala</button>
+				<button id="repChild">Podmien krasnala</button>
+				<button id="remChild">Usun krasnala</button>
+			</div>
+
+
 
 			<section id="linki">
 
@@ -55,13 +68,13 @@
 			</section>
 
 			<section id="forms">
-				<form>
+				<form onsubmit="subAlert()" onreset="resAlert()">
 					<input type="text" name="name" autofocus><label>&Tab;Imię </label><br>
 					
 	  				<input type="text" name="surname" required><label>&Tab;Nazwisko</label>
 				</form><br>
 
-				<form>
+				<form >
 					<input type="radio" name="plec" value="female">Kobieta<br>
 					<input type="radio" name="plec" value="male">Mężczyzna
 				</form><br>
@@ -73,6 +86,8 @@
 					<input type="checkbox" name="place" value="park">Park Szczytnicki<br>
 				</form><br>
 				<button id="pok">Ok?</button>
+				<button id="res">Reset</button>
+				<button id="sub">Submit</button>
 			</section>
 
 		</div>

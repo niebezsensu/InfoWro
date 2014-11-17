@@ -2,20 +2,22 @@ koloru tła, koloru tekstu
 altKey,
 Zademonstrować działanie metod JavaScript: createElement, createTextNode, appendChild, 
 Zademonstrować możliwości właściwości  keyCode, clientX, clientY,
-mouseover, images, item
+mouseover, images, item i namedItem.
+links mousedown reset
 -----------------------------------------
 
 
 --------------------------------------
-1) Zademonstrować działanie kolekcji: , links, forms, anchors oraz metod  i namedItem.
+1) Zademonstrować działanie kolekcji: , 
+, anchors 
 
-2) Wykorzystać w formularzach zdarzenia focus i blur do wyświetlania tekstów pomocy oraz zdarzenia submit i reset do wyzwalania okien potwierdzających.
+2) Wykorzystać w formularzach zdarzenia focus i blur do wyświetlania tekstów pomocy oraz zdarzenia submit i  do wyzwalania okien potwierdzających.
 
 3) Umożliwić użytkownikowi zmianę na żądanie stylów CSS: , rodzaju czcionki (z listy).
 
 4) insertBefore, replaceChild,  removeChild
 
-5) screenX, screenY obiektu event. Wykorzystać zdarzenia: mousemove, mousedown, mouseout.
+5) screenX, screenY obiektu event. Wykorzystać zdarzenia: mousemove, , mouseout.
 
 6) właściwości parentNode.
 
