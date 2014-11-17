@@ -1,15 +1,22 @@
-Na stronach rozwijanej od początku semestru witryny WWW należy:
-
-Zademonstrować działanie metod JavaScript: createElement, createTextNode, appendChild, insertBefore, replaceChild,  removeChild
-oraz właściwości parentNode.
 koloru tła, koloru tekstu
-altKey, ctrlKey, shiftKey
-
-Zademonstrować działanie kolekcji: images, links, forms, anchors oraz metod item i namedItem.
-Umożliwić użytkownikowi zmianę na żądanie stylów CSS: , rodzaju czcionki (z listy).
-Zademonstrować możliwości właściwości  keyCode, clientX, clientY, screenX, screenY obiektu event. Wykorzystać zdarzenia: mousemove, mousedown, mouseover, mouseout.
-
-Wykorzystać w formularzach zdarzenia focus i blur do wyświetlania tekstów pomocy oraz zdarzenia submit i reset do wyzwalania okien potwierdzających.
+altKey,
+Zademonstrować działanie metod JavaScript: createElement, createTextNode, appendChild, 
+Zademonstrować możliwości właściwości  keyCode, clientX, clientY,
+mouseover, images, item
+-----------------------------------------
 
 
-Funkcje JavaScript do poszczególnych zadań powinny znajdować się w osobnych plikach .js
+--------------------------------------
+1) Zademonstrować działanie kolekcji: , links, forms, anchors oraz metod  i namedItem.
+
+2) Wykorzystać w formularzach zdarzenia focus i blur do wyświetlania tekstów pomocy oraz zdarzenia submit i reset do wyzwalania okien potwierdzających.
+
+3) Umożliwić użytkownikowi zmianę na żądanie stylów CSS: , rodzaju czcionki (z listy).
+
+4) insertBefore, replaceChild,  removeChild
+
+5) screenX, screenY obiektu event. Wykorzystać zdarzenia: mousemove, mousedown, mouseout.
+
+6) właściwości parentNode.
+
+7) ctrlKey, shiftKey

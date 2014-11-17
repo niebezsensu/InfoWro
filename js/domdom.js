@@ -15,7 +15,7 @@ function init(){
 	btn2.addEventListener('click', function(){changeC(what, color, event)}, false);       
 
 	btn3 = document.createElement("BUTTON");        
-	t3 = document.createTextNode("CLICK ME");       
+	t3 = document.createTextNode("Rusz obrazki");       
 	btn3.appendChild(t3);              
 
 	 
@@ -47,7 +47,13 @@ function init(){
     }, 500);
   }, false);
 
+	  btn3.addEventListener('click', function(){rotImgs();});
+
 }
+
+wally = document.getElementById('wally');
+
+wally.addEventListener('mousedown', function(){wally.style['transform']='translateX(-100px)';});
 
 co1 = document.getElementById('yellowl');
 co1.addEventListener('click', function(){color=1;}, false);
@@ -106,13 +112,16 @@ console.log(coor);
 	cir.style.marginLeft = x + 'px';
     cir.style.marginTop = y + 'px';
 
+    cir.style.width = cir.offsetWidth + 3+'px';
+    cir.style.height = cir.offsetHeight + 3+'px';
+
     console.log("xnaprawde: "+cir.style.marginLeft+" ynaprawde: "+cir.style.marginTop);
 
-    cir.style['background-color'] = "yellow";
+    cir.style['opacity'] = "0.4";
 
 }
 
-	  co1.addEventListener("mouseover", function( event ) {   
+co1.addEventListener("mouseover", function( event ) {   
     // highlight the mouseenter target
     event.target.style['background-color'] = "purple";
 
@@ -121,6 +130,46 @@ console.log(coor);
       event.target.style['background-color'] = "";
     }, 1000);
   }, false);
+
+// var selectForm = document.forms[index];
+// var selectFormElement = document.forms[index].elements[index];
+
+// document.getElementById('pok').addEventListener('click', function(){checkit(){};})
+
+// function checkit(){
+
+// }
+
+function showLinks(){
+	var links = document.links;
+	for(var i = 0; i < links.length; i++) {
+	  var linkHref = document.createTextNode(links[i].href);
+	  var lineBreak = document.createElement("br");
+	  document.getElementById('linki').appendChild(lineBreak);
+	  document.getElementById('linki').appendChild(linkHref);
+	  
+	}
+}
+
+function rotImgs(){
+	var ilist = document.images;
+	console.log("liczba obrazkow "+ilist.length);
+	ilist.item(2).style['opacity'] = '0.2';
+	ilist.namedItem('enano2').style['opacity'] = '0.2';
+
+	console.log(ilist.item(1).src);
+	for(var i = 0; i < ilist.length; i++) {
+
+		if(ilist[i].id != 'wally'){
+	    	animateIm(ilist[i]);
+		}
+	}
+	showLinks();
+}
+
+function animateIm(obr){
+	obr.style['transform'] = 'rotate(180deg)';
+}
 
 /*
 
