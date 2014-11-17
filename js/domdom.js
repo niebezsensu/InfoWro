@@ -15,7 +15,7 @@ function init(){
 	btn2.addEventListener('click', function(){changeC(what, color, event)}, false);       
 
 	btn3 = document.createElement("BUTTON");        
-	t3 = document.createTextNode("Rusz obrazki");       
+	t3 = document.createTextNode("RUSZ OBRAZKI");       
 	btn3.appendChild(t3);              
 
 	 
@@ -157,7 +157,7 @@ function repChild(){
 
 function remChild(){
 
-	document.getElementById('rodzicKrasnali').removeChild(en1);
+	document.getElementById('rodzicKrasnali').removeChild(en2);
 
 }
 
@@ -171,6 +171,16 @@ function resetAll(){
 	for(var i = 0; i < forms.length; i++) {
 
 		forms[i].reset();
+	}
+}
+
+function changeF(nr){
+	var bod = document.body;
+	switch(nr){
+		case 1: bod.style['font-family'] = 'Open Sans Condensed'; break;
+		case 2: bod.style['font-family'] = 'Indie Flower'; break;
+		case 3: bod.style['font-family'] = 'Josefin Sans'; break;
+		default: break;
 	}
 }
 

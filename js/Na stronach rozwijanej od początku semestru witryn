@@ -4,6 +4,8 @@ Zademonstrować działanie metod JavaScript: createElement, createTextNode, appe
 Zademonstrować możliwości właściwości  keyCode, clientX, clientY,
 mouseover, images, item i namedItem.
 links mousedown reset
+4) insertBefore, replaceChild,  removeChild
+3) Umożliwić użytkownikowi zmianę na żądanie stylów CSS: , rodzaju czcionki (z listy).
 -----------------------------------------
 
 
@@ -13,9 +15,9 @@ links mousedown reset
 
 2) Wykorzystać w formularzach zdarzenia focus i blur do wyświetlania tekstów pomocy oraz zdarzenia submit i  do wyzwalania okien potwierdzających.
 
-3) Umożliwić użytkownikowi zmianę na żądanie stylów CSS: , rodzaju czcionki (z listy).
 
-4) insertBefore, replaceChild,  removeChild
+
+
 
 5) screenX, screenY obiektu event. Wykorzystać zdarzenia: mousemove, , mouseout.
 

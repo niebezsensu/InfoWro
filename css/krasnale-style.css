@@ -7,6 +7,18 @@ section{
 	float: left;
 }
 
+#font1{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#font2{
+	font-family: 'Indie Flower', cursive;
+}
+
+#font3{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
 #wally{
 	position: absolute;
 	left: -1em;
