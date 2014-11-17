@@ -1,5 +1,6 @@
 body{
 	background-color: red;
+	color: blue;
 }
 
 #light-background{
@@ -16,6 +17,7 @@ body{
 }
 
 #colors{
+	margin: 0.5em;
 	padding: 0.5em;
 	background-color: white;
 	width: 40%;
@@ -57,4 +59,14 @@ body{
 	width: 2em;
 	height: 2em;
 	background-color: #54694B;
+}
+
+#bluel:hover, #greenl:hover, #yellowd:hover, #blued:hover, #greend:hover{
+	opacity: 0.5;
+}
+
+#bluel:active, #greenl:active, #yellowd:active, #blued:active, #greend:active{
+	border-style: solid;
+	border-color: blue;
+	border-width: 3px;
 }

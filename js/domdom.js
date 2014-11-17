@@ -12,7 +12,7 @@ function init(){
 	btn2 = document.createElement("BUTTON");        
 	t2 = document.createTextNode("ZMIEN KOLOR");       
 	btn2.appendChild(t2);        
-	btn2.addEventListener('click', function(){changeC(what, color)}, false);       
+	btn2.addEventListener('click', function(){changeC(what, color, event)}, false);       
 
 	btn3 = document.createElement("BUTTON");        
 	t3 = document.createTextNode("CLICK ME");       
@@ -37,6 +37,16 @@ function init(){
 	document.getElementById("light-background").appendChild(butBack);
 	document.getElementById("light-background").appendChild(butFont);
 
+	  btn2.addEventListener("mouseover", function( event ) {   
+    // highlight the mouseenter target
+    event.target.style.color = "purple";
+
+    // reset the color after a short delay
+    setTimeout(function() {
+      event.target.style.color = "";
+    }, 500);
+  }, false);
+
 }
 
 co1 = document.getElementById('yellowl');
@@ -58,7 +68,7 @@ co6 = document.getElementById('greend');
 co6.addEventListener('click', function(){color=6;}, false);
 
 
-function changeC(whatt, co){
+function changeC(whatt, co, e){
 	console.log("what: "+ whatt);
 	console.log("co: "+ co);
 	var col;
@@ -73,15 +83,26 @@ function changeC(whatt, co){
 	}
 
 
-	if(what == 1){
-		console.log("zmieniam tlo na "+col);
+	if(e.altKey){
+		console.log("zmieniam tlo na "+col+" ctrl: "+event.altKey);
 		document.body.style['background-color'] = col;
 	}else{
-
+		console.log("zmieniam kolor czcionki na "+col);
+		document.body.style['color'] = col;
 	}
 }
 
 
+
+	  co1.addEventListener("mouseover", function( event ) {   
+    // highlight the mouseenter target
+    event.target.style['background-color'] = "purple";
+
+    // reset the color after a short delay
+    setTimeout(function() {
+      event.target.style['background-color'] = "";
+    }, 1000);
+  }, false);
 
 /*
 
