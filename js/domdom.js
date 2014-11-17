@@ -67,6 +67,9 @@ co5.addEventListener('click', function(){color=5;}, false);
 co6 = document.getElementById('greend');
 co6.addEventListener('click', function(){color=6;}, false);
 
+var cir = document.getElementById('circle');
+document.addEventListener('click', function(){moveCircle(event);});
+
 
 function changeC(whatt, co, e){
 	console.log("what: "+ whatt);
@@ -86,13 +89,28 @@ function changeC(whatt, co, e){
 	if(e.altKey){
 		console.log("zmieniam tlo na "+col+" ctrl: "+event.altKey);
 		document.body.style['background-color'] = col;
+		
+		alert( "keyCode for the key pressed: " + e.keyCode + "\n" );
 	}else{
 		console.log("zmieniam kolor czcionki na "+col);
 		document.body.style['color'] = col;
 	}
 }
 
+function moveCircle(e){
+	var x = e.clientX;     // Get the horizontal coordinate
+	var y = e.clientY;     // Get the vertical coordinate
+	var coor = "X coords: " + x + ", Y coords: " + y;
+	
+console.log(coor);
+	cir.style.marginLeft = x + 'px';
+    cir.style.marginTop = y + 'px';
 
+    console.log("xnaprawde: "+cir.style.marginLeft+" ynaprawde: "+cir.style.marginTop);
+
+    cir.style['background-color'] = "yellow";
+
+}
 
 	  co1.addEventListener("mouseover", function( event ) {   
     // highlight the mouseenter target

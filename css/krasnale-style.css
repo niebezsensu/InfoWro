@@ -1,6 +1,4 @@
 body{
-	background-color: red;
-	color: blue;
 }
 
 #light-background{
@@ -69,4 +67,15 @@ body{
 	border-style: solid;
 	border-color: blue;
 	border-width: 3px;
+}
+
+#circle{
+	position: absolute;
+	border-radius: 40px;
+	left: 0;
+	top: 0;
+	height: 40px;
+	width: 40px;
+	background-color: green;
+	-webkit-transition: all 1s; 
 }
