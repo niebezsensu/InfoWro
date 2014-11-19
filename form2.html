@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="css/backgrounds.css" type="text/css"/>
 		<title>A teraz cos o sobie</title>
 	</head>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<body style="color:blue">
 		<h1>Wrocław</h1>
 		<p><strong><a href="main.html">Strona główna</a></strong></p>
@@ -89,11 +89,44 @@
 					<input type="reset" value="Wyczyść">
 				</p>
 				
+				<script>
+				$(document).ready(function()
+				{
+  					$("input").focus(function()
+  				{
+    				$(this).css("background-color","#cccccc");
+  				});
+  					$("input").blur(function()
+  				{
+    				$(this).css("background-color","#ffffff");
+  				});
+				});
+				</script>
 		</form>
 
 		<footer>
 			<p>&copy; 2014 Karolina i Asia. All rights reserved.</p>
 		</footer>
-	</body>
+
+			
+<script>
+	$(document).ready(function()
+	{
+  		$("input").focus(function()
+  		{
+    		$(this).css("background-color","#cccccc");
+  		});
+  			$("input").blur(function()
+  			{
+    			$(this).css("background-color","#ffffff");
+  			});
+		});
+</script>
+
+
+
+
+
+</body>
 
 </html>

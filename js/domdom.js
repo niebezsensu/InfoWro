@@ -243,6 +243,16 @@ function rotImgs(){
 function animateIm(obr){
 	obr.style['transform'] = 'rotate(180deg)';
 }
+<p>In this example, the text field gets focus immediately after the document window has been loaded.</p>
+ 
+<input type="text" id="myText" value="A text field">
+
+<script>
+window.onload = function() {
+  document.getElementById("myText").focus();
+};
+</script>
+
 
 /*
 
