@@ -1,0 +1,24 @@
+form{
+	width: 50%;
+}
+
+
+body{
+	background-color: blue;
+}
+
+#form1{
+	position: relative;
+	background-color: #DADADA;
+	margin: 0 auto;
+}
+
+#result{
+	background-color: #DADADA;
+	background-color: #DADADA;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 20px;
+	width: 50%;
+	padding: 1em;
+}

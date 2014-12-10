@@ -38,10 +38,8 @@ function init(){
 	document.getElementById("light-background").appendChild(butFont);
 
 	  btn2.addEventListener("mouseover", function( event ) {   
-    // highlight the mouseenter target
-    event.target.style.color = "purple";
+    event.target.style.color = "red";
 
-    // reset the color after a short delay
     setTimeout(function() {
       event.target.style.color = "";
     }, 500);
@@ -98,7 +96,7 @@ function changeC(whatt, co, e){
 		console.log("zmieniam tlo na "+col+" ctrl: "+event.altKey);
 		document.body.style['background-color'] = col;
 		
-		alert( "keyCode for the key pressed: " + e.keyCode + "\n" );
+		alert( "keyCode dla klawisza: " + e.keyCode + "\n" );
 	}else{
 		console.log("zmieniam kolor czcionki na "+col);
 		document.body.style['color'] = col;
@@ -243,6 +241,8 @@ function rotImgs(){
 function animateIm(obr){
 	obr.style['transform'] = 'rotate(180deg)';
 }
+
+/*
 <p>In this example, the text field gets focus immediately after the document window has been loaded.</p>
  
 <input type="text" id="myText" value="A text field">
@@ -254,7 +254,6 @@ window.onload = function() {
 </script>
 
 
-/*
 
 var linksList = document.links;
 for (var i = 0; i < linksList.length; ++i)

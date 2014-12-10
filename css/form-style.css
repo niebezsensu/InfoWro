@@ -9,11 +9,11 @@ body{
 }
 
 h1:hover{
-	color: yellow;
+	/*color: yellow;*/
 }
 
 h1:active{
-	color:red;
+	/*color:red;*/
 }
 
 form{
@@ -22,35 +22,25 @@ form{
 }
 
 input:disabled {
-    background: #DADADA;
+    /*background: #DADADA;*/
 }
 
 input:enabled {
-    background: yellow;
+    /*background: yellow;*/
 }
 
 input:focus{
-	background: green;
+	/*background: green;*/
 }
 
 input:required{
-	background-color: red;
+	/*background-color: red;*/
 }
 
-p:empty {
+/*p:empty {
     width: 100px;
     height: 100px;
     background: green;
-}
+}*/
 
-a:link{
-	color: white;
-}
 
-a:visited{
-	color: purple;
-}
-
-input[type="checkbox"]:checked {
-  display: none;  
-}
